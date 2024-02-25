@@ -1,0 +1,103 @@
+body {
+  margin: o;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-image: radial-gradient(rgb(21, 2, 115), rgb(2, 0, 23));
+  color: rgb(221, 237, 251);
+  padding: 10px;
+}
+
+.todo-app {
+  width: 100%;
+  max-width: 540px;
+  background-image: radial-gradient(rgb(80, 97, 157), transparent);
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+}
+.todo-app h2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(2, 9, 35);
+  border-radius: 10px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  font-weight: 14px;
+  color: #fff;
+}
+button {
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background: rgb(221, 237, 251);
+  color: rgb(1, 1, 39);
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+ul li {
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+ul li::before {
+  content: '';
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(asset/5a29a98fa8d392.2357798015126798236915.png);
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+
+ul li.check{
+  color: green;
+  text-decoration: line-through;
+}
+ul li.check::before{
+  background-image: url(asset/check_5610944.png);
+}
+
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: red;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+ul li span:hover {
+  background: rgba(221, 237, 251, 0.538);
+}
