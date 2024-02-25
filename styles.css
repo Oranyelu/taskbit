@@ -2,12 +2,8 @@ body {
   margin: o;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-.material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
-}
 .container {
   width: 100%;
   min-height: 100vh;
@@ -66,23 +62,24 @@ ul li {
   position: relative;
 }
 ul li::before {
-  content: '';
+  content: "";
   position: absolute;
-  height: 28px;
-  width: 28px;
+  height: 20px;
+  width: 20px;
   border-radius: 50%;
-  background-image: url(asset/5a29a98fa8d392.2357798015126798236915.png);
+  border-width: 3px;
+  border-style: solid;
   background-size: cover;
   background-position: center;
   top: 12px;
   left: 8px;
 }
 
-ul li.check{
+ul li.check {
   color: green;
   text-decoration: line-through;
 }
-ul li.check::before{
+ul li.check::before {
   background-image: url(asset/check_5610944.png);
 }
 
@@ -100,4 +97,9 @@ ul li span {
 }
 ul li span:hover {
   background: rgba(221, 237, 251, 0.538);
+}
+footer img {
+  opacity: 60%;
+  width: 100vw;
+  height: 40vh;
 }

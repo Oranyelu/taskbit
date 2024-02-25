@@ -1,10 +1,11 @@
-const userName = document.getElementById("user-name");
+
 
 function welcomeUser() {
-  if (userName.value === "") {alert("name field must not be empty");}
+  const userName = document.getElementById("user-name").value;
+  if (userName === "") {alert("name field must not be empty");}
   else{
-
-    alert("Welcome Let create some task");
+    const greetinigMessage = 'Welcome ${userName}, Lets create some task';
+    alert(greetinigMessage);
   }
 }
 
