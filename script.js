@@ -4,7 +4,7 @@ function welcomeUser() {
   const userName = document.getElementById("user-name").value;
   if (userName === "") {alert("name field must not be empty");}
   else{
-    const greetinigMessage = 'Welcome ${userName}, Lets create some task';
+    const greetinigMessage = `Welcome ${userName}, Lets create some task`;
     alert(greetinigMessage);
   }
 }
